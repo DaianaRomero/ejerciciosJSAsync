@@ -20,6 +20,7 @@ function obtenerChiste(callback){
         console.log("Error: " + err.message);
     });;
 
+   
 }
 
 module.exports = obtenerChiste;

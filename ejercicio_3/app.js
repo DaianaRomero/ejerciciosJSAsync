@@ -4,9 +4,17 @@ const obtenerPokemon = require("./library");
 // Codigo funcion callback
 
 function imprimir(url) {
-    console.log(url);
-    
+    //console.log(url);
+    console.log("Nombre: "+ url.name);
+    console.log("Habilidades: ");
+    url.abilities.forEach(skill => {
+        console.log("*"+skill.ability.name);
+
+        
+    });
 }
+    
+
 
 
 // Fin codigo

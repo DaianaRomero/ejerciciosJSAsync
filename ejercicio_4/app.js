@@ -5,8 +5,16 @@ const obtenerPokemon = require("./library");
 
 
 
-obtenerPokemon("chikorita").then(function imprimir(options) {
-    console.log(options);
+obtenerPokemon("charizard").then(function imprimir(options) {
+
+    console.log("Nombre: "+ options.name);
+    console.log("Habilidades: ");
+    options.abilities.forEach(skill => {
+        console.log("*"+skill.ability.name);
+    })
+    
+
+   
     
 }).catch(function(err){
     console.log("problemas al ejecutar");
